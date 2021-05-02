@@ -1,0 +1,31 @@
+@font-face
+{
+    font-family: customfont;
+    src: local("微軟正黑體"), local("Microsoft JhengHei");
+    unicode-range: U+4E00-9FFF;
+	font-weight:bolder;
+	
+}
+@font-face
+{
+    font-family: customfont;
+    unicode-range: U+00-024F;
+    src: local(Helvetica), local(Segoe UI);
+	font-weight:bolder;
+}
+body ,h1 ,h2 ,h3 ,h4
+{
+	/*font-family: customfont;*/
+}
+footer{
+	/*display:none;*/
+}
+.md-footer-copyright
+{
+	/*display:none;*/
+}
+html *
+{
+   font-size: 1.03em;
+}
+
