@@ -442,6 +442,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2-setledmatrixrow" class="md-nav__link">
+    2. SetLEDMatrixRow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-setledmatrixcolumn" class="md-nav__link">
+    3. SetLEDMatrixColumn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-setledmatrixpixel" class="md-nav__link">
+    3. SetLEDMatrixPixel
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -510,6 +531,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2-setledmatrixrow" class="md-nav__link">
+    2. SetLEDMatrixRow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-setledmatrixcolumn" class="md-nav__link">
+    3. SetLEDMatrixColumn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-setledmatrixpixel" class="md-nav__link">
+    3. SetLEDMatrixPixel
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -528,7 +570,7 @@
                 <h3 id="1-setledmatrix">1. SetLEDMatrix</h3>
 <p>參數</p>
 <ul>
-<li>Matrix : 2維陣列(8x8)</li>
+<li>Matrix : 2維陣列(8x8) 或者 None(64顆燈全滅)</li>
 <li>DIN : 12</li>
 <li>CS : 2~21</li>
 <li>CLK :2~21</li>
@@ -542,6 +584,35 @@
 <span class="n">Matrix</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">4</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
 <span class="n">Matrix</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">7</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
 <span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrix</span><span class="p">(</span><span class="n">Matrix</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span>
+<span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrix</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span> <span class="c1">#初始化燈全滅</span>
+</code></pre></div></p>
+<h3 id="2-setledmatrixrow">2. SetLEDMatrixRow</h3>
+<p>參數</p>
+<ul>
+<li>Row : 第幾列1~8 </li>
+<li>ONOFF : 0~255 </li>
+</ul>
+<p>Sample
+    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrixRow</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+</code></pre></div></p>
+<h3 id="3-setledmatrixcolumn">3. SetLEDMatrixColumn</h3>
+<p>參數</p>
+<ul>
+<li>Column : 第幾行1~8 </li>
+<li>ONOFF : 0~255 </li>
+</ul>
+<p>Sample
+    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrixColumn</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+</code></pre></div></p>
+<h3 id="3-setledmatrixpixel">3. SetLEDMatrixPixel</h3>
+<p>參數</p>
+<ul>
+<li>Row : 第幾列1~8 </li>
+<li>Column : 第幾行1~8 </li>
+<li>ONOFF : 0(False)關,1(True)開</li>
+</ul>
+<p>Sample
+    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrixPixel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div></p>
                 
               
