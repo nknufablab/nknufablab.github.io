@@ -443,22 +443,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-setledmatrixrow" class="md-nav__link">
-    2. SetLEDMatrixRow
+  <a href="#2-setledmatrixext" class="md-nav__link">
+    2. SetLEDMatrixExt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-setledmatrixcolumn" class="md-nav__link">
-    3. SetLEDMatrixColumn
+  <a href="#3-setledmatrixrow" class="md-nav__link">
+    3. SetLEDMatrixRow
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-setledmatrixpixel" class="md-nav__link">
-    3. SetLEDMatrixPixel
+  <a href="#4-setledmatrixcolumn" class="md-nav__link">
+    4. SetLEDMatrixColumn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-setledmatrixpixel" class="md-nav__link">
+    5. SetLEDMatrixPixel
   </a>
   
 </li>
@@ -501,6 +508,51 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BMP180/" class="md-nav__link">
+        BMP180
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GetIRRemote/" class="md-nav__link">
+        IRRemote
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GetMPU9255/" class="md-nav__link">
+        MPU9255
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -532,22 +584,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-setledmatrixrow" class="md-nav__link">
-    2. SetLEDMatrixRow
+  <a href="#2-setledmatrixext" class="md-nav__link">
+    2. SetLEDMatrixExt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-setledmatrixcolumn" class="md-nav__link">
-    3. SetLEDMatrixColumn
+  <a href="#3-setledmatrixrow" class="md-nav__link">
+    3. SetLEDMatrixRow
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-setledmatrixpixel" class="md-nav__link">
-    3. SetLEDMatrixPixel
+  <a href="#4-setledmatrixcolumn" class="md-nav__link">
+    4. SetLEDMatrixColumn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-setledmatrixpixel" class="md-nav__link">
+    5. SetLEDMatrixPixel
   </a>
   
 </li>
@@ -586,7 +645,26 @@
 <span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrix</span><span class="p">(</span><span class="n">Matrix</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span>
 <span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrix</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span> <span class="c1">#初始化燈全滅</span>
 </code></pre></div></p>
-<h3 id="2-setledmatrixrow">2. SetLEDMatrixRow</h3>
+<h3 id="2-setledmatrixext">2. SetLEDMatrixExt</h3>
+<p>參數</p>
+<ul>
+<li>Row1 : 0~255</li>
+<li>Row2 : 0~255</li>
+<li>Row3 : 0~255</li>
+<li>Row4 : 0~255</li>
+<li>Row5 : 0~255</li>
+<li>Row6 : 0~255</li>
+<li>Row7 : 0~255</li>
+<li>Row8 : 0~255</li>
+<li>DIN : 12</li>
+<li>CS : 2~21</li>
+<li>CLK :2~21</li>
+</ul>
+<p>Sample
+    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrix</span><span class="p">(</span><span class="n">Matrix</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span>
+<span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrix</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span> <span class="c1">#初始化燈全滅</span>
+</code></pre></div></p>
+<h3 id="3-setledmatrixrow">3. SetLEDMatrixRow</h3>
 <p>參數</p>
 <ul>
 <li>Row : 第幾列1~8 </li>
@@ -595,7 +673,7 @@
 <p>Sample
     <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrixRow</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
 </code></pre></div></p>
-<h3 id="3-setledmatrixcolumn">3. SetLEDMatrixColumn</h3>
+<h3 id="4-setledmatrixcolumn">4. SetLEDMatrixColumn</h3>
 <p>參數</p>
 <ul>
 <li>Column : 第幾行1~8 </li>
@@ -604,7 +682,7 @@
 <p>Sample
     <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLEDMatrixColumn</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
 </code></pre></div></p>
-<h3 id="3-setledmatrixpixel">3. SetLEDMatrixPixel</h3>
+<h3 id="5-setledmatrixpixel">5. SetLEDMatrixPixel</h3>
 <p>參數</p>
 <ul>
 <li>Row : 第幾列1~8 </li>

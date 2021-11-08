@@ -14,7 +14,7 @@
     
     
       
-        <title>LCD - Fablab-NKNU 5012 Python API</title>
+        <title>IRRemote - Fablab-NKNU 5012 Python API</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-setlcdtext" class="md-skip">
+        <a href="#1getirremote" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LCD
+              IRRemote
             
           </span>
         </div>
@@ -315,75 +315,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          LCD
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../LCD/" class="md-nav__link">
         LCD
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-setlcdtext" class="md-nav__link">
-    1. SetLCDText
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-setlcdclear" class="md-nav__link">
-    2. SetLCDClear
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-setlcdbacklight" class="md-nav__link">
-    3. SetLCDBacklight
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-setlcdshiftright" class="md-nav__link">
-    4. SetLCDShiftRight
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-setlcdshiftleft" class="md-nav__link">
-    5. SetLCDShiftLeft
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -529,11 +465,47 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../GetIRRemote/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          IRRemote
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         IRRemote
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1getirremote" class="md-nav__link">
+    1.GetIRRemote
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -577,36 +549,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-setlcdtext" class="md-nav__link">
-    1. SetLCDText
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-setlcdclear" class="md-nav__link">
-    2. SetLCDClear
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-setlcdbacklight" class="md-nav__link">
-    3. SetLCDBacklight
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-setlcdshiftright" class="md-nav__link">
-    4. SetLCDShiftRight
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-setlcdshiftleft" class="md-nav__link">
-    5. SetLCDShiftLeft
+  <a href="#1getirremote" class="md-nav__link">
+    1.GetIRRemote
   </a>
   
 </li>
@@ -624,54 +568,12 @@
               
                 
                 
-                  <h1>LCD</h1>
+                  <h1>IRRemote</h1>
                 
-                <h3 id="1-setlcdtext">1. SetLCDText</h3>
+                <h3 id="1getirremote">1.GetIRRemote</h3>
 <p>參數</p>
-<ul>
-<li>Row : 1~2 </li>
-<li>Column:1~16</li>
-<li>Text: 英文/數字 (16碼)</li>
-<li>Address(可選) : 0x00=自動,可用0x3F,0x20,0x27</li>
-</ul>
 <p>Sample
-    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLCDText</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;NKNU 5012 Test&#39;</span><span class="p">)</span>
-
-<span class="n">v5012</span><span class="o">.</span><span class="n">SetLCDText</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;NKNU 5012 Test&#39;</span><span class="p">,</span><span class="s1">&#39;0x27&#39;</span><span class="p">)</span>
-</code></pre></div></p>
-<h3 id="2-setlcdclear">2. SetLCDClear</h3>
-<p>參數</p>
-<ul>
-<li>Address(可選) : 0x00=自動,可用0x3F,0x20,0x27</li>
-</ul>
-<p>Sample
-    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLCDClear</span><span class="p">()</span>
-</code></pre></div></p>
-<h3 id="3-setlcdbacklight">3. SetLCDBacklight</h3>
-<p>參數</p>
-<ul>
-<li>IsOn : 0=OFF,1=ON</li>
-<li>Address(可選) : 0x00=自動,可用0x3F,0x20,0x27</li>
-</ul>
-<p>Sample
-    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLCDBacklight</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">v5012</span><span class="o">.</span><span class="n">SetLCDBacklight</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div></p>
-<h3 id="4-setlcdshiftright">4. SetLCDShiftRight</h3>
-<p>參數</p>
-<ul>
-<li>Address(可選) : 0x00=自動,可用0x3F,0x20,0x27</li>
-</ul>
-<p>Sample
-    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLCDShiftRight</span><span class="p">()</span>
-</code></pre></div></p>
-<h3 id="5-setlcdshiftleft">5. SetLCDShiftLeft</h3>
-<p>參數</p>
-<ul>
-<li>Address(可選) : 0x00=自動,可用0x3F,0x20,0x27</li>
-</ul>
-<p>Sample
-    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">SetLCDShiftLeft</span><span class="p">()</span>
+    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">GetIRRemote</span><span class="p">()</span>
 </code></pre></div></p>
                 
               
@@ -691,7 +593,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../GetLuminance/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../BMP180/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -700,19 +602,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              GetLuminance
+              BMP180
             </div>
           </div>
         </a>
       
       
-        <a href="../OLED/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../GetMPU9255/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              OLED
+              MPU9255
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-getdistance" class="md-skip">
+        <a href="#1-getdistance-cm" class="md-skip">
           Skip to content
         </a>
       
@@ -301,8 +301,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-getdistance" class="md-nav__link">
-    1. GetDistance
+  <a href="#1-getdistance-cm" class="md-nav__link">
+    1. GetDistance (cm)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-getdistanceintime-ms" class="md-nav__link">
+    2. GetDistanceInTime (ms)
   </a>
   
 </li>
@@ -480,6 +487,51 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BMP180/" class="md-nav__link">
+        BMP180
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GetIRRemote/" class="md-nav__link">
+        IRRemote
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GetMPU9255/" class="md-nav__link">
+        MPU9255
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -504,8 +556,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-getdistance" class="md-nav__link">
-    1. GetDistance
+  <a href="#1-getdistance-cm" class="md-nav__link">
+    1. GetDistance (cm)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-getdistanceintime-ms" class="md-nav__link">
+    2. GetDistanceInTime (ms)
   </a>
   
 </li>
@@ -525,7 +584,7 @@
                 
                   <h1>GetDistance</h1>
                 
-                <h3 id="1-getdistance">1. GetDistance</h3>
+                <h3 id="1-getdistance-cm">1. GetDistance (cm)</h3>
 <p>參數</p>
 <ul>
 <li>Pin_Trig : 2~21</li>
@@ -533,6 +592,15 @@
 </ul>
 <p>Sample
     <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Distance=&#39;</span><span class="o">+</span><span class="n">v5012</span><span class="o">.</span><span class="n">GetDistance</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</code></pre></div></p>
+<h3 id="2-getdistanceintime-ms">2. GetDistanceInTime (ms)</h3>
+<p>參數</p>
+<ul>
+<li>Pin_Trig : 2~21</li>
+<li>Pin_Echo : 2~21</li>
+</ul>
+<p>Sample
+    <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Distance=&#39;</span><span class="o">+</span><span class="n">v5012</span><span class="o">.</span><span class="n">GetDistanceInTime</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
 </code></pre></div></p>
                 
               
