@@ -252,13 +252,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    連接方式
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -677,13 +670,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    連接方式
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -748,7 +734,7 @@
 <h3 id="_4">功能介紹</h3>
 <p>NKNUBLOCK Python API 連接Python與NKNUBLOCK之間的溝通橋樑，使用者可以透過Python呼叫HAL5012.py來做控制公版教具，
 但同一時刻只能選擇USB、Wi-Fi或硬體模擬其中一種方式進行連線，使用時NKNUBLOCK也要保持運作。</p>
-<p>如果您使用2.5.8版本的Python IDE，基本上可以直接跳到第2節 "簡單的範例"</p>
+<p>如果您使用2.5.8版本的Python IDE，基本上可以直接跳到第"2. 連接公版教具"</p>
 <h3 id="python">Python 路徑</h3>
 <p>如果您使用的版本是2.5.8以上，那麼NKNUBLOCK會預設使用內建的Python37</p>
 <div class="admonition 內建的python37">
@@ -767,48 +753,6 @@
 <p class="admonition-title">Warning</p>
 <p>如果您是使用自己的編譯環境，請確保HAL5012.py為最新版本，可以去C:\Program Files (x86)\NKNU\NKNUBLOCK目錄下複製</p>
 </div>
-<h3 id="_6">連接方式</h3>
-<ol>
-<li>可以透過NKNUBLOCK原本的連接方式做連接，也就是透過網頁使用者介面操作</li>
-<li>
-<p>可以透過指令做連接</p>
-<p>2.1 USB - 自動連接
-    <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">v5012</span><span class="o">.</span><span class="n">AutoConnectUSB</span><span class="p">():</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="n">v5012</span><span class="o">.</span><span class="n">GetVersion</span><span class="p">())</span>   
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;連接失敗&#39;</span><span class="p">)</span>
-</code></pre></div>
-2.2 USB - 選擇連接
-    <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">v5012</span><span class="o">.</span><span class="n">ConnectUSB</span><span class="p">(</span><span class="s1">&#39;COM4&#39;</span><span class="p">):</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="n">v5012</span><span class="o">.</span><span class="n">GetVersion</span><span class="p">())</span>   
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;連接失敗&#39;</span><span class="p">)</span>
-</code></pre></div>
-2.3 連接5012/4060模擬器
-    <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">v5012</span><span class="o">.</span><span class="n">ConnectUSB</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">Simulation</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="n">v5012</span><span class="o">.</span><span class="n">GetVersion</span><span class="p">())</span>   
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;連接失敗&#39;</span><span class="p">)</span>
-</code></pre></div>
-2.4 Wi-Fi <br />
-    <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">v5012</span><span class="o">.</span><span class="n">ConnectTCP</span><span class="p">(</span><span class="s1">&#39;127.0.0.1:4999&#39;</span><span class="p">):</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="n">v5012</span><span class="o">.</span><span class="n">GetVersion</span><span class="p">())</span>   
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;連接失敗&#39;</span><span class="p">)</span>
-</code></pre></div>
-3. 是否連接
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">v5012</span><span class="o">.</span><span class="n">IsConnected</span><span class="p">():</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;已連接&#39;</span><span class="p">)</span>    
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;未連接&#39;</span><span class="p">)</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>斷開連線</p>
-<div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">Disconnect</span><span class="p">()</span>
-</code></pre></div>
-</li>
-</ol>
                 
               
               
