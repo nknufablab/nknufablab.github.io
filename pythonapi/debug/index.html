@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="../../nknu.ico">
+      <link rel="icon" href="../nknu.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
-        <title>IRRemote - Fablab-NKNU 5012 Python API</title>
+        <title>4. 除錯 - Fablab-NKNU 5012 Python API</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e35208c4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
         
       
     
@@ -36,7 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="../../default.css">
+      <link rel="stylesheet" href="../default.css">
     
     
       
@@ -55,7 +55,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1getirremote" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -76,9 +76,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Fablab-NKNU 5012 Python API" class="md-header__button md-logo" aria-label="Fablab-NKNU 5012 Python API" data-md-component="logo">
+    <a href=".." title="Fablab-NKNU 5012 Python API" class="md-header__button md-logo" aria-label="Fablab-NKNU 5012 Python API" data-md-component="logo">
       
-  <img src="../../nknu.ico" alt="logo">
+  <img src="../nknu.ico" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              IRRemote
+              4. 除錯
             
           </span>
         </div>
@@ -164,9 +164,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Fablab-NKNU 5012 Python API" class="md-nav__button md-logo" aria-label="Fablab-NKNU 5012 Python API" data-md-component="logo">
+    <a href=".." title="Fablab-NKNU 5012 Python API" class="md-nav__button md-logo" aria-label="Fablab-NKNU 5012 Python API" data-md-component="logo">
       
-  <img src="../../nknu.ico" alt="logo">
+  <img src="../nknu.ico" alt="logo">
 
     </a>
     Fablab-NKNU 5012 Python API
@@ -182,7 +182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         1. 簡介
       </a>
     </li>
@@ -197,7 +197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../connection/" class="md-nav__link">
+      <a href="../connection/" class="md-nav__link">
         2. 連接公版教具
       </a>
     </li>
@@ -212,293 +212,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sample/" class="md-nav__link">
+      <a href="../sample/" class="md-nav__link">
         3. 簡單範例
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../debug/" class="md-nav__link">
-        4. 除錯
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../GPIO/" class="md-nav__link">
-        GPIO
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PWM/" class="md-nav__link">
-        PWM
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Analog/" class="md-nav__link">
-        Analog
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Servo/" class="md-nav__link">
-        Servo(SG90)
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Motor/" class="md-nav__link">
-        Motor(N20)
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../GetDistance/" class="md-nav__link">
-        GetDistance
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../DHT11/" class="md-nav__link">
-        Temp.&Humidity(DHT11)
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../GetLuminance/" class="md-nav__link">
-        GetLuminance
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LCD/" class="md-nav__link">
-        LCD
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../OLED/" class="md-nav__link">
-        OLED
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TM1637/" class="md-nav__link">
-        TM1637
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Beep/" class="md-nav__link">
-        Buzzer
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WaterTemperature/" class="md-nav__link">
-        WaterTemperature
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../AirQulity/" class="md-nav__link">
-        AirQulity
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Matrix/" class="md-nav__link">
-        8x8LED
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WS2812/" class="md-nav__link">
-        WS2812
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../EEPROM/" class="md-nav__link">
-        EEPROM
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../BMP180/" class="md-nav__link">
-        BMP180
       </a>
     </li>
   
@@ -520,12 +235,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          IRRemote
+          4. 除錯
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        IRRemote
+        4. 除錯
       </a>
       
         
@@ -541,8 +256,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1getirremote" class="md-nav__link">
-    1.GetIRRemote
+  <a href="#_1" class="md-nav__link">
+    除錯方式介紹
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    以搖桿舉例
   </a>
   
 </li>
@@ -563,7 +285,292 @@
   
   
     <li class="md-nav__item">
-      <a href="../GetMPU9255/" class="md-nav__link">
+      <a href="../api/GPIO/" class="md-nav__link">
+        GPIO
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/PWM/" class="md-nav__link">
+        PWM
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Analog/" class="md-nav__link">
+        Analog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Servo/" class="md-nav__link">
+        Servo(SG90)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Motor/" class="md-nav__link">
+        Motor(N20)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/GetDistance/" class="md-nav__link">
+        GetDistance
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/DHT11/" class="md-nav__link">
+        Temp.&Humidity(DHT11)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/GetLuminance/" class="md-nav__link">
+        GetLuminance
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/LCD/" class="md-nav__link">
+        LCD
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/OLED/" class="md-nav__link">
+        OLED
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/TM1637/" class="md-nav__link">
+        TM1637
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Beep/" class="md-nav__link">
+        Buzzer
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/WaterTemperature/" class="md-nav__link">
+        WaterTemperature
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/AirQulity/" class="md-nav__link">
+        AirQulity
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/Matrix/" class="md-nav__link">
+        8x8LED
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/WS2812/" class="md-nav__link">
+        WS2812
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/EEPROM/" class="md-nav__link">
+        EEPROM
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/BMP180/" class="md-nav__link">
+        BMP180
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/GetIRRemote/" class="md-nav__link">
+        IRRemote
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/GetMPU9255/" class="md-nav__link">
         MPU9255
       </a>
     </li>
@@ -594,8 +601,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1getirremote" class="md-nav__link">
-    1.GetIRRemote
+  <a href="#_1" class="md-nav__link">
+    除錯方式介紹
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    以搖桿舉例
   </a>
   
 </li>
@@ -613,13 +627,24 @@
               
                 
                 
-                  <h1>IRRemote</h1>
+                  <h1>4. 除錯</h1>
                 
-                <h3 id="1getirremote">1.GetIRRemote</h3>
-<p>參數</p>
-<p>Sample
-    <div class="highlight"><pre><span></span><code><span class="n">v5012</span><span class="o">.</span><span class="n">GetIRRemote</span><span class="p">()</span>
-</code></pre></div></p>
+                <h3 id="_1">除錯方式介紹</h3>
+<p>由於內建的Python IDE以方便為主，功能可能不比其他專業的Python工具完整</p>
+<p>但我們可以透過輸出積木，將執行結果輸出檢視</p>
+<p><img alt="Print" src="/img/Print.jpg" /></p>
+<p>但輸出太快，可能造成我們無法讀取，所以可以搭配"等待N秒"使用</p>
+<h3 id="_2">以搖桿舉例</h3>
+<p>可以輸出搖桿X,Y值來做觀測，每0.5秒輸出一次
+<img alt="StickSample" src="/img/StickSample.jpg" /></p>
+<div class="highlight"><pre><span></span><code><span class="c1">#-------------主程式迴圈-------------</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+   <span class="c1">#Start Flag in Scratch</span>
+   <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
+   <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;X=&quot;</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">v5012</span><span class="o">.</span><span class="n">GetAnalog</span><span class="p">(</span><span class="mi">14</span><span class="p">))</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;,Y=&quot;</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">v5012</span><span class="o">.</span><span class="n">GetAnalog</span><span class="p">(</span><span class="mi">15</span><span class="p">)))</span>
+</code></pre></div>
+<p>輸出結果會顯示在下方黑色視窗
+<img alt="StickOutput" src="/img/StickOutput.jpg" /></p>
                 
               
               
@@ -638,7 +663,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../BMP180/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../sample/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -647,19 +672,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              BMP180
+              3. 簡單範例
             </div>
           </div>
         </a>
       
       
-        <a href="../GetMPU9255/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../api/GPIO/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              MPU9255
+              GPIO
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -692,12 +717,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
-        <script src="../../search/main.js"></script>
+        <script src="../search/main.js"></script>
       
     
   </body>
